@@ -1,13 +1,17 @@
 {
   "name": "ls-dependents-cli",
   "version": "0.0.1",
-  "description": "",
+  "description": "A cli tool to list dependents of a given package in a filesystem dir(s)",
   "scripts": {
     "postversion": "git push origin master && git push --tags",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
     "ls-dependents": "./cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justin-calleja/ls-dependents-cli"
   },
   "keywords": [],
   "author": "Justin Calleja <calleja.justin@gmail.com>",

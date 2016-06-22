@@ -57,7 +57,6 @@ var recurse = cli.flags.r || false;
 pkgJSONInfoDict(paths, (err, result) => {
   if (!pkgName) {
     var allDependentsDict = pkgDependents.allDependentsOf(result);
-    // console.log('allDependentsDict:', allDependentsDict);
     Object.keys(allDependentsDict).forEach(key => {
       console.log(archy(archify(key, allDependentsDict, childrenOf)));
     });

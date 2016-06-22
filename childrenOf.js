@@ -1,7 +1,6 @@
 // parent: string
 // data: DependentsDict
 module.exports = function childrenOf(parent, data) {
-  // console.log('parent:', parent, 'data:', data);
   var dependents = data[parent];
   if (dependents === undefined) {
     return [];
@@ -22,39 +21,3 @@ module.exports = function childrenOf(parent, data) {
     return depsLP.concat(peerDepsLP).concat(devDepsLP);
   }
 }
-
-// parent: a data: { a:
-//    { pkgName:
-//       { dependencyDependents: {},
-//         peerDependencyDependents: {},
-//         devDependencyDependents: {} } },
-//   c:
-//    { pkgName:
-//       { dependencyDependents: [Object],
-//         peerDependencyDependents: {},
-//         devDependencyDependents: {} } },
-//   e:
-//    { pkgName:
-//       { dependencyDependents: [Object],
-//         peerDependencyDependents: {},
-//         devDependencyDependents: {} } },
-//   g:
-//    { pkgName:
-//       { dependencyDependents: {},
-//         peerDependencyDependents: {},
-//         devDependencyDependents: [Object] } },
-//   b:
-//    { pkgName:
-//       { dependencyDependents: [Object],
-//         peerDependencyDependents: {},
-//         devDependencyDependents: {} } },
-//   d:
-//    { pkgName:
-//       { dependencyDependents: {},
-//         peerDependencyDependents: [Object],
-//         devDependencyDependents: [Object] } },
-//   f:
-//    { pkgName:
-//       { dependencyDependents: [Object],
-//         peerDependencyDependents: {},
-//         devDependencyDependents: {} } } }
