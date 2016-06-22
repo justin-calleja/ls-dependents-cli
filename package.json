@@ -1,0 +1,21 @@
+{
+  "name": "ls-dependents-cli",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "ls-dependents": "./cli.js"
+  },
+  "keywords": [],
+  "author": "Justin Calleja <calleja.justin@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "archify": "~0.0.4",
+    "archy": "^1.0.0",
+    "meow": "^3.7.0",
+    "pkg-dependents": "~0.0.9",
+    "pkg-json-info-dict": "~0.0.3"
+  }
+}
