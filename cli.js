@@ -61,7 +61,7 @@ pkgJSONInfoDict(paths, (err, result) => {
       console.log(archy(archify(key, allDependentsDict, childrenOf)));
     });
   } else if (recurse) {
-    var filteredDependentsDict = pkgDependents.filter(pkgName, pkgDependents.allDependentsOf(result));
+    var filteredDependentsDict = pkgDependents.filterDependentsDict(pkgName, pkgDependents.allDependentsOf(result));
     console.log(archy(archify(pkgName, filteredDependentsDict, childrenOf)));
   } else {
     var dependentsDict = pkgDependents.dependentsOfDict(pkgName, result);

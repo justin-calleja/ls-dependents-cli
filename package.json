@@ -20,7 +20,7 @@
     "archify": "~0.0.4",
     "archy": "^1.0.0",
     "meow": "^3.7.0",
-    "pkg-dependents": "~0.0.9",
+    "pkg-dependents": "~0.0.10",
     "pkg-json-info-dict": "~0.0.3"
   }
 }
