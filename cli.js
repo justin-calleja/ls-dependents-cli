@@ -2,7 +2,7 @@
 
 var meow = require('meow');
 var pkgDependents = require('pkg-dependents');
-var pkgJSONInfoDict = require('pkg-json-info-dict').pkgJSONInfoDict;
+var readPkgJSONInfoDict = require('pkg-json-info-dict').readPkgJSONInfoDict;
 var archify = require('archify').default;
 var archy = require('archy');
 var childrenOf = require('./childrenOf');
@@ -54,7 +54,7 @@ if (Array.isArray(cli.flags.add)) {
 
 var recurse = cli.flags.r || false;
 
-pkgJSONInfoDict(paths, (err, result) => {
+readPkgJSONInfoDict(paths, (err, result) => {
   if (!pkgName) {
     var allDependentsDict = pkgDependents.allDependentsOf(result);
     Object.keys(allDependentsDict).forEach(key => {
