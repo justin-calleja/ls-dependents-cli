@@ -1,6 +1,6 @@
 {
   "name": "ls-dependents-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A cli tool to list dependents of a given package in a filesystem dir(s)",
   "scripts": {
     "postversion": "git push origin master && git push --tags",
